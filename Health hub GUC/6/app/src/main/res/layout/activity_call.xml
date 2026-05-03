@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bbf"
+    android:orientation="vertical"
+    tools:context=".Call">
+    <TextView
+        android:id="@+id/staticIpText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/staticPortText"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="src ip :     "
+        android:textColor="#000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/dynamicIpText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/dynamicPortText"
+        android:layout_toRightOf="@+id/staticIpText"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Your IP"
+        android:textColor="#000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/staticPortText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/destIpText"
+        android:layout_marginBottom="100dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="src port number :     "
+        android:textColor="#000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/dynamicPortText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/destIpText"
+        android:layout_marginBottom="100dp"
+        android:layout_toRightOf="@+id/staticPortText"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Your Port Number"
+        android:textColor="#000"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/destIpText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_edit_text"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Ip"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/destPortText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/destIpText"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_edit_text"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Port Number"
+        android:inputType="number">
+
+    </EditText>
+
+
+    <ImageButton
+        android:id="@+id/connectBtn"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/rounded_edit_text"
+        android:src="@drawable/start"
+        android:backgroundTint="#00FF00" />
+
+    <ImageButton
+        android:id="@+id/disconnectBtn"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/rounded_edit_text"
+        android:src="@drawable/end"
+        android:backgroundTint="#ff0000"
+        android:text="Disconnect" />
+</RelativeLayout>

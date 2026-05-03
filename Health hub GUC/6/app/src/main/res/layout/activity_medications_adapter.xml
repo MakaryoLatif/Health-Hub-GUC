@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#33cccc"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/medication_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medication Name"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/item_medication_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="Medication Image"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:id="@+id/expandable_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/medication_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity Available: 0" />
+
+        <TextView
+            android:id="@+id/medication_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price: $0.00" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:id="@+id/decreaseButton"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="−"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/chosen_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:text="0"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/increaseButton"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!-- Ask for Approval Button -->
+
+    </LinearLayout>
+</LinearLayout>

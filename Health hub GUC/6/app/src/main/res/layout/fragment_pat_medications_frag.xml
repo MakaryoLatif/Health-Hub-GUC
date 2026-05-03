@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- RecyclerView to display medications in grid -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/medicationsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="100mm"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:scrollbars="vertical"/>
+
+    <!-- Button to approve the medication for cart -->
+    <Button
+        android:id="@+id/askForApprovalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Request Approval"
+        android:layout_below="@id/medicationsRecyclerView"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+    <Button
+        android:id="@+id/approveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add to Cart"
+        android:layout_below="@id/medicationsRecyclerView"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/> <!-- Initially hidden -->
+
+</RelativeLayout>

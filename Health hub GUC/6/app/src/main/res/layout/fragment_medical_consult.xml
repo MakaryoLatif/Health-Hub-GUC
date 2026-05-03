@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Input for Consultation Description -->
+    <EditText
+        android:id="@+id/consultationDescriptionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Describe your issue"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:gravity="start|top"
+        android:background="@android:drawable/editbox_background_normal" />
+
+    <!-- Button to Request Consultation -->
+    <Button
+        android:id="@+id/requestConsultationButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Request Consultation"
+        android:layout_marginTop="16dp" />
+
+    <!-- RecyclerView to Display Previous Consultations -->
+    <TextView
+        android:id="@+id/previousConsultationsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Previous Consultations"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/previousConsultationsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:dividerHeight="8dp" />
+
+</LinearLayout>

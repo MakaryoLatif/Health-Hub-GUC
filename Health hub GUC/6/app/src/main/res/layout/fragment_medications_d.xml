@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- RecyclerView to display the list of medications -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical" />
+
+    <!-- ImageView for displaying the selected image -->
+    <ImageView
+        android:id="@+id/medication_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="Medication Image"
+        android:scaleType="centerCrop"
+        android:background="@android:color/darker_gray" />
+
+    <!-- Horizontal LinearLayout to place the buttons next to each other -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <!-- Button to select an image from the gallery -->
+        <Button
+            android:id="@+id/select_image_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Select Image"
+            android:padding="8dp"
+            android:layout_marginEnd="8dp"/>
+
+        <!-- Button to capture an image using the camera -->
+        <Button
+            android:id="@+id/capture_image_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Capture Image"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <!-- EditText for medication name -->
+    <EditText
+        android:id="@+id/medication_name_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Medication Name"
+        android:padding="8dp" />
+
+    <!-- EditText for medication quantity -->
+    <EditText
+        android:id="@+id/medication_quantity_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Quantity"
+        android:inputType="number"
+        android:padding="8dp" />
+
+    <!-- EditText for medication price -->
+    <EditText
+        android:id="@+id/medication_price_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Price"
+        android:inputType="numberDecimal"
+        android:padding="8dp" />
+
+    <!-- Button to add medication -->
+    <Button
+        android:id="@+id/add_medication_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Medication"
+        android:padding="8dp" />
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cartRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@id/confirmButton"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/confirmButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:text="Confirm Items" />
+
+    <TextView
+        android:id="@+id/totalPriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cartRecyclerView"
+        android:layout_centerHorizontal="true"
+        android:text="Total Price: $0.00"
+        android:textSize="18sp" />
+
+</RelativeLayout>

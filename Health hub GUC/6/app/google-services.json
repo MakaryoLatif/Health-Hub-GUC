@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "558460345169",
+    "project_id": "health-hub-guc",
+    "storage_bucket": "health-hub-guc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:558460345169:android:bc00fa1523d566e9fd9170",
+        "android_client_info": {
+          "package_name": "com.example.healthhubguc"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzfQTO5CJrVNBz8FfUBKcoz_GNDyTjfYA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Profile Fields -->
+    <TextView
+        android:id="@+id/profileTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Doctor Profile"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:enabled="false"
+        android:textSize="24sp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/edt_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Age"
+        android:inputType="number"
+        android:enabled="false"
+        android:textSize="24sp"
+        android:textColor="@color/black"/>
+
+    <!-- Change Email to TextView -->
+    <TextView
+        android:id="@+id/txt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="24sp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/passwordTextView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="password"
+        android:textSize="24sp"
+        android:textColor="@color/black" />
+
+
+
+    <TextView
+        android:id="@+id/txt_user_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User Type"
+        android:paddingTop="8dp"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txt_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <!-- Edit and Update Buttons -->
+    <Button
+        android:id="@+id/btn_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Edit Profile"
+        android:textSize="16sp" />
+
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Profile"
+        android:visibility="gone"
+        android:textSize="16sp"
+        android:layout_gravity="center_horizontal"/>
+    <Button
+        android:id="@+id/Calldoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Call"
+        android:textSize="16sp" />
+
+</LinearLayout>
